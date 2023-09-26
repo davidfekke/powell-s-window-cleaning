@@ -22,10 +22,7 @@ const MenuItem = props => (
 
 const NavBar = () => {
     return (
-        <ul style={{ display: 'block', 
-                    float: 'left',
-                    listStyle: 'none',
-                    padding: '0px' }}>
+        <ul className="items-center">
             {menuData.map(item => ( <MenuItem key={item.title} title={item.title} link={item.link} /> ))}
         </ul>
     )
